@@ -49,7 +49,7 @@ function Home() {
     fetch('https://moviz-back-tawny.vercel.app/movies')
       .then(response => response.json())
       .then(data => {
-        setMoviesData(data.movies.results);
+        setMoviesData(data.movies);
       });
   }, []);
 
